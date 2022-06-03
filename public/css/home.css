@@ -191,7 +191,7 @@ footer {
 #logoPicture
 {
     width: auto;
-    height: 250px;
+    height: 300px;
 }
 
 #selfCarePicture
@@ -199,6 +199,6 @@ footer {
     margin-top: -50px;
     object-fit: contain;
     align-self: center;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
