@@ -48,7 +48,6 @@ div#photo
 .pageTitle
 {
     font-size: 50px;
-    margin-left: 4.5vw;
 }
 
 #information
@@ -85,6 +84,10 @@ div#photo
     padding-left: 50px;
     padding-right: 50px;
     align-self:center;
+}
+
+#founderTitlePage {
+    margin-left: 4.5vw;
 }
 
 #founderContainerSecondHalf
