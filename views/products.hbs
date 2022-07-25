@@ -13,20 +13,15 @@
 <!-- Remove Public in HREF !-->
 
 <body>
-    <nav>
-        <label class="logo"><text id="logoFirstHalf">Bubble</text><text id="logoSecondHalf">Booms</text></label>
-        <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/products">Product</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
-    </nav>
+    {{> navbar}}
 
     <section>
         <div id = "imageViewer" class = "modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
-        
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
                 <div class="mySlides">
                     <div class="numbertext">1 / 2</div>
                     <img id = "imageViewOne" style="width:100%">
@@ -36,13 +31,9 @@
                     <div class="numbertext">2 / 2</div>
                     <img id="imageViewTwo" style="width:100%">
                 </div>
-                
-                <div id = "buttons">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
                 
-        
             </div>
         </div>
 
@@ -162,34 +153,8 @@
             
     </section>
 
-    <footer>
-        <hr id = "footerLine">
-        <div id = "footerContainer">
-            <div id = "footerLogo">
-                <label class="logo"><text id="logoFirstHalf">Bubble</text><text id="logoSecondHalf">Booms</text></label>
-                <label id = "footerLogoText">© BubbleBooms. All Rights Reserved 2022.</label>
-            </div>
-            
-            <div id = "links">
-                <span id="linksTitle">Link</span>
-                <a href="/">Home</a>
-                <a href="/products">Product</a>
-                <a href="/about">About</a>
-                
-            </div>
-            
-            <div id="social">
-                <span id="linksTitle">Find us here</span>
-                <div id = "socialLogos">
-                    <a href="https://www.facebook.com/BubbleBooms.Official/"><img src="../images/facebook-logo2.png" style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.instagram.com/bubblebooms.ph/"><img src="../images/instagram-logo.png" style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.shopee.ph/bubblebooms.ph"><img src="../images/shopee-logo.png" style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.lazada.com.ph/shop/bubblebooms-ph/"><img src="../images/lazada-logo.png" style="object-fit: contain; height: 30px;"></a>
-                </div>
+    {{> footer}}
 
-            </div>
-        </div>
-    </footer>
     <script>
         var pictures;
 

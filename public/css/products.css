@@ -13,136 +13,14 @@
     
 }
 
-
 body {
     height: 100vh;
     overflow-x:hidden;
     background-color: #FFFBEE;
 }
 
-nav {
-
-    height: 80px;
-    width: 100%;
-    background-color: #F3DBCF;
-}
-
-label.logo {
-    font-size: 40px;
-    line-height: 70px;
-    padding: 0 30px;
-    font-weight: bold;
-    font-family: Hammock;
-}
-
-#logoFirstHalf {
-    font-family: Hammock;
-    color: #AAC9CE;
-}
-
-#logoSecondHalf {
-    font-family: Hammock;
-    color: #E5C1CD;
-}
-
-nav ul {
-    float: right;
-    padding-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    padding: 10px;
-    border-radius: 3px;
-    font-size: 17px;
-    text-transform: uppercase;
-    color: black;
-}
-
-a.active,
-a:hover {
-    transition: .5s;
-}
-
 section {
     background-color: #FFFBEE;
-}
-
-#footerLine {
-    border-color:#7a7267;
-    border-style: solid ;
-    border-width: 1px 0px 0px;
-}
-
-footer {
-    height: 200px;
-}
-
-#footerContainer
-{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    height: 100%;
-}
-
-#footerLogo
-{
-    display:flex;
-    flex-direction: column;
-    margin-left: 30px;
-    align-self: center;
-    margin-bottom: 30px;
-}
-
-#footerLogoText
-{
-    margin-left: 30px;
-}
-
-#linksTitle
-{
-    font-size: 20px;
-    font-family: bold;
-}
-
-#links
-{
-    display:flex;
-    flex-direction: column;
-    justify-content:space-around;
-    padding: 20px;
-    margin-right: 30px;
-}
-
-#links a
-{
-    text-decoration: none;
-    color: black;
-}
-
-#social
-{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-}
-
-#socialLogos
-{
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-}
-
-#socialLogos a {
-    padding-right: 10px;
 }
 
 @media(max-width: 700px) {
@@ -258,7 +136,7 @@ footer {
 {
     background: linear-gradient(to right, #ddceba ,#eac99e , #ddceba, #e3c399);
     border-radius: 25px;
-    margin: 40px;
+    margin: 80px 40px 40px 40px;
 }
 
 #blushBubble:hover
@@ -350,6 +228,7 @@ footer {
     background: linear-gradient(to right, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3 , #FBD489 );
     border-radius: 25px;
     margin: 40px;
+    height: 33em;
 }
 
 #artistic1:hover {
@@ -458,7 +337,7 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .numbertext {
@@ -475,20 +354,14 @@ footer {
 
 .modal-content {
     display: flex;
-    flex-direction:column;
-    background-color: black;
+    flex-direction:row;
     margin: auto;
     padding: 0;
     width: 100%;
     max-width: 1200px;
+    justify-content: space-between;
 }
 
-#buttons
-{
-    display:flex;
-    flex-direction: row;
-    align-self: center;
-}
 
 #imageViewOne
 {
@@ -497,7 +370,6 @@ footer {
     height: 600px;
     object-fit: contain;
     padding: 50px;
-    opacity: 100%;
 }
 
 #imageViewTwo {
@@ -506,7 +378,6 @@ footer {
     height: 600px;
     object-fit: contain;
     padding: 50px;
-    opacity: 100%;
 }
 
 .close {
@@ -525,25 +396,32 @@ footer {
     cursor: pointer;
 }
 
+
 .prev,
 .next {
+    display:block;
+    height: 100%;
     cursor: pointer;
     align-self: center;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    padding: 20px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
     transition: 0.6s ease;
-    border-radius: 0 5px 5px 0;
+    border-radius: 10px;
     user-select: none;
     -webkit-user-select: none;
 }
 
+.prev {
+    border-radius: 10px 0 0 10px;
+}
+
 .next {
-    border-radius: 3px 0 0 3px;
+    margin-left: 50px;
+    border-radius: 0 10px 10px 0;
 }
 
 .prev:hover,

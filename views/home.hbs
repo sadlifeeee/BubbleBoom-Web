@@ -10,62 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Tangerine&display=swap" rel="stylesheet">
 </head>
 
-<!-- Remove Public in HREF !-->
-
 <body>
-    <nav>
-        <label class="logo"><text id="logoFirstHalf">Bubble</text><text id="logoSecondHalf">Booms</text></label>
-        <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/products">Product</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
-    </nav>
+    {{> navbar}}
 
     <section>
         <div id = "homeContainer">
+            <!--
             <div id = "logoContainer">
                 <img src = "../images/logo.png" id = "logoPicture">
                 <img src = "../images/homeSelfCarepng.png" id = "selfCarePicture">
             </div>
-
+            -->
             <a href = "https://www.lazada.com.ph/shop/bubblebooms-ph/"><img src = "../images/homePicture1.jpg" id = "homePicture"></a>
         </div>
 
-    </section>
-
-    <footer>
-        <hr id="footerLine">
-        <div id="footerContainer">
-            <div id="footerLogo">
-                <label class="logo"><text id="logoFirstHalf">Bubble</text><text id="logoSecondHalf">Booms</text></label>
-                <label id="footerLogoText">© BubbleBooms. All Rights Reserved 2022.</label>
+        <div id = "featureProductContainer">
+            
+            <div id = "topFeatureProductContainer">
+                <label id="featureTitle">Featured Products</label>
             </div>
 
-            <div id="links">
-                <span id="linksTitle">Link</span>
-                <a href="/">Home</a>
-                <a href="/products">Product</a>
-                <a href="/about">About</a>
 
-            </div>
-
-            <div id="social">
-                <span id="linksTitle">Find us here</span>
-                <div id="socialLogos">
-                    <a href="https://www.facebook.com/BubbleBooms.Official/"><img src="../images/facebook-logo2.png"
-                            style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.instagram.com/bubblebooms.ph/"><img src="../images/instagram-logo.png"
-                            style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.shopee.ph/bubblebooms.ph"><img src="../images/shopee-logo.png"
-                            style="object-fit: contain; height: 30px;"></a>
-                    <a href="https://www.lazada.com.ph/shop/bubblebooms-ph/"><img src="../images/lazada-logo.png"
-                            style="object-fit: contain; height: 30px;"></a>
+            <div id="productPhotoContainer">
+                <div class="productContainer">
+                    <img src="../images/BlushBubble.jpg" class="productPhoto" id = "blushBubble" onclick = "openModal();getPicture(this);changePhoto()">
+                    <div class="productInfoContainer">
+                        <label class="productName">Blush Bubble</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is strawberry ice cream scented and a milk tea inspired hand soap that has cute designs of a straw and pearls!</label>
+                    </div>
+                </div>
+            
+                <div class="productContainer">
+                    <img src="../images/CitrusFoam.jpg" class="productPhoto" id = "citrusFoam" onclick = "openModal();getPicture(this);changePhoto()" >
+                    <div class="productInfoContainer">
+                        <label class="productName">Citrus Foam</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is green tea scented and a milk tea inspired hand soap. It was even purposely made to have a look of a Honey Dew milk
+                        tea to be more appealing!</label>
+                    </div>
+                </div>
+            
+                <div class="productContainer">
+                    <img src="../images/Cuppa Java.jpg" class="productPhoto" id = "cuppaJava" onclick = "openModal();getPicture(this);changePhoto()">
+                    <div class="productInfoContainer">
+                        <label class="productName">Cuppa Java</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is coffee scented and a milk tea inspired hand soap that can surely satisfy the nose of a coffee lover!</label>
+                    </div>
                 </div>
 
-            </div>
         </div>
-    </footer>
+
+
+    </section>
+
+    {{> footer}}
 
 </body>
 
