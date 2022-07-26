@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Tangerine&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript\imageViewer.js" type="text/javascript"></script>
 </head>
 
 <!-- Remove Public in HREF !-->
@@ -17,22 +20,20 @@
 
     <section>
         <div id = "imageViewer" class = "modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <span class="close cursor">&times;</span>
             <div class="modal-content">
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <div class="numbertext">0 / 0</div>
+                <a class="prev">&#10094;</a>
 
                 <div class="mySlides">
-                    <div class="numbertext">1 / 2</div>
                     <img id = "imageViewOne" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <div class="numbertext">2 / 2</div>
                     <img id="imageViewTwo" style="width:100%">
                 </div>
 
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="next">&#10095;</a>
                 
             </div>
         </div>
@@ -50,7 +51,7 @@
             
             <div id="productPhotoContainer">
                 <div class="productContainer">
-                    <img src="../images/BlushBubble.jpg" class="productPhoto" id = "blushBubble" onclick = "openModal();getPicture(this);changePhoto()">
+                    <img src="../images/BlushBubble.jpg" class="productPhoto" id = "blushBubble">
                     <div class="productInfoContainer">
                         <label class="productName">Blush Bubble</label>
                         <label class="productPrice">P149</label>
@@ -59,7 +60,7 @@
                 </div>
             
                 <div class="productContainer">
-                    <img src="../images/CitrusFoam.jpg" class="productPhoto" id = "citrusFoam" onclick = "openModal();getPicture(this);changePhoto()" >
+                    <img src="../images/CitrusFoam.jpg" class="productPhoto" id = "citrusFoam">
                     <div class="productInfoContainer">
                         <label class="productName">Citrus Foam</label>
                         <label class="productPrice">P149</label>
@@ -69,7 +70,7 @@
                 </div>
             
                 <div class="productContainer">
-                    <img src="../images/Cuppa Java.jpg" class="productPhoto" id = "cuppaJava" onclick = "openModal();getPicture(this);changePhoto()">
+                    <img src="../images/Cuppa Java.jpg" class="productPhoto" id = "cuppaJava">
                     <div class="productInfoContainer">
                         <label class="productName">Cuppa Java</label>
                         <label class="productPrice">P149</label>
@@ -87,10 +88,10 @@
         
             <div id="productPhotoContainer">
                 <div class="productContainer">
-                    <img src="../images/Artistic 1.jpg" class="productPhoto" id = "artistic1" onclick = "openModal();getPicture(this);changePhoto()">
+                    <img src="../images/Artistic 1.jpg" class="productPhoto" id = "artistic1">
                     <div class="productInfoContainer">
                         <label class="productName">Artistic 1</label>
-                        <label class="productPrice">P1000</label>
+                        <label class="productPrice">P149</label>
                         <label class="aboutProduct">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro laborum,
                             recusandae, illum
                             eaque deserunt a quisquam reiciendis ullam exercitationem, aperiam mollitia ducimus facilis officia!
@@ -100,10 +101,10 @@
                 </div>
         
                 <div class="productContainer">
-                    <img src="../images/Artistic 2.jpg" class="productPhoto" id = "artistic2" onclick = "openModal();getPicture(this);changePhoto()">
+                    <img src="../images/Artistic 2.jpg" class="productPhoto" id = "artistic2">
                     <div class="productInfoContainer">
                         <label class="productName">Artistic 2</label>
-                        <label class="productPrice">P1000</label>
+                        <label class="productPrice">P149</label>
                         <label class="aboutProduct">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro laborum,
                             recusandae, illum
                             eaque deserunt a quisquam reiciendis ullam exercitationem, aperiam mollitia ducimus facilis officia!
@@ -113,10 +114,10 @@
                 </div>
         
                 <div class="productContainer">
-                    <img src="../images/Artistic 3.jpg" class="productPhoto" id = "artistic3" onclick = "openModal();getPicture(this);changePhoto()">
+                    <img src="../images/Artistic 3.jpg" class="productPhoto" id = "artistic3">
                     <div class="productInfoContainer">
                         <label class="productName">Artistic 3</label>
-                        <label class="productPrice">P1000</label>
+                        <label class="productPrice">P139</label>
                         <label class="aboutProduct">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro laborum,
                             recusandae, illum
                             eaque deserunt a quisquam reiciendis ullam exercitationem, aperiam mollitia ducimus facilis officia!
@@ -154,69 +155,6 @@
     </section>
 
     {{> footer}}
-
-    <script>
-        var pictures;
-
-        function openModal() {
-            document.getElementById("imageViewer").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("imageViewer").style.display = "none";
-        }
-
-        function getPicture(element) {
-            pictures = element.id
-            console.log(pictures)
-        }
-
-        function changePhoto() {
-            if(pictures == "blushBubble") {
-                document.getElementById("imageViewOne").src = "../images/BlushBubble.jpg"
-                document.getElementById("imageViewTwo").src = "../images/BlushBubble2.jpg"
-            } else if(pictures == "citrusFoam") {
-                document.getElementById("imageViewOne").src = "../images/CitrusFoam.jpg"
-                document.getElementById("imageViewTwo").src = "../images/CitrusFoam2.jpg"
-            } else if(pictures == "cuppaJava") {
-                document.getElementById("imageViewOne").src = "../images/Cuppa\ Java.jpg"
-                document.getElementById("imageViewTwo").src = "../images/Cuppa\ Java\ 2.jpg"
-            } else if(pictures == "artistic1") {
-                document.getElementById("imageViewOne").src = "../images/Artistic\ 1.jpg"
-                document.getElementById("imageViewTwo").src = "../images/Artistic\ 1\ 2.jpg"
-            } else if(pictures == "artistic2") {
-                document.getElementById("imageViewOne").src = "../images/Artistic\ 2.jpg"
-                document.getElementById("imageViewTwo").src = "../images/Artistic\ 2\ 2.jpg"
-            } else if(pictures == "artistic3") {
-                document.getElementById("imageViewOne").src = "../images/Artistic\ 3.jpg"
-                document.getElementById("imageViewTwo").src = "../images/Artistic\ 3\ 2.jpg"
-            }
-        
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-                
-            }
-            
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-    </script>
 
 </body>
 

@@ -98,6 +98,16 @@ section {
     justify-content: space-around;
 }
 
+.productName 
+{
+    font-weight: bold;
+}
+
+.productPrice 
+{
+    font-weight: bold;
+}
+
 .productContainer
 {
     display: flex;
@@ -134,94 +144,23 @@ section {
 
 #MilkTeaContainer
 {
-    background: linear-gradient(to right, #ddceba ,#eac99e , #ddceba, #e3c399);
+    background: linear-gradient(to left, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3, #FBD489);
     border-radius: 25px;
     margin: 80px 40px 40px 40px;
 }
 
 #blushBubble:hover
 {
-    animation: milktea1 15s infinite;
     cursor: pointer;
-}
-
-@keyframes milktea1 {
-    
-    25%{
-        content: url("/images/BlushBubble2.jpg");
-        width: 300px;
-    }
-    50%{
-        content: url("/images/BlushBubble.jpg");
-        width: 200px;
-    }
-
-    75%{
-        content: url("/images/BlushBubble2.jpg");
-        width: 300px;
-    }
-
-    100%{
-        content: url("/images/BlushBubble.jpg");
-        width: 200px;
-    }
 }
 
 #citrusFoam:hover
 {
-    animation: milktea2 15s infinite;
     cursor: pointer;
-}
-
-@keyframes milktea2 {
-
-    25% {
-        content: url("/images/CitrusFoam2.jpg");
-        width: 300px;
-    }
-
-    50% {
-        content: url("/images/CitrusFoam.jpg");
-        width: 200px;
-    }
-
-    75% {
-        content: url("/images/CitrusFoam2.jpg");
-        width: 300px;
-    }
-
-    100% {
-        content: url("/images/CitrusFoam.jpg");
-        width: 200px;
-    }
 }
 
 #cuppaJava:hover {
-    animation: milktea3 15s infinite;
     cursor: pointer;
-}
-
-@keyframes milktea3 {
-
-    25% {
-        content: url("/images/Cuppa\ Java\ 2.jpg");
-        width: 300px;
-    }
-
-    50% {
-        content: url("/images/Cuppa\ Java.jpg");
-        width: 200px;
-    }
-
-    75% {
-        content: url("/images/Cuppa\ Java\ 2.jpg");
-        width: 300px;
-    }
-
-    100% {
-        content: url("/images/Cuppa\ Java.jpg");
-        width: 200px;
-    }
 }
 
 #ArtisticContainer {
@@ -232,90 +171,19 @@ section {
 }
 
 #artistic1:hover {
-    animation: artistic1 15s infinite;
     cursor: pointer;
-}
-
-@keyframes artistic1 {
-
-    25% {
-        content: url("/images/Artistic\ 1\ 2.jpg");
-        width: 300px;
-    }
-
-    50% {
-        content: url("/images/Artistic\ 1.jpg");
-        width: 200px;
-    }
-
-    75% {
-        content: url("/images/Artistic\ 1.jpg");
-        width: 300px;
-    }
-
-    100% {
-        content: url("/images/Artistic\ 1\ 2.jpg");
-        width: 200px;
-    }
 }
 
 #artistic2:hover {
-    animation: artistic2 15s infinite;
     cursor: pointer;
-}
-
-@keyframes artistic2 {
-
-    25% {
-        content: url("/images/Artistic\ 2\ 2.jpg");
-        width: 300px;
-    }
-
-    50% {
-        content: url("/images/Artistic\ 2.jpg");
-        width: 200px;
-    }
-
-    75% {
-        content: url("/images/Artistic\ 2.jpg");
-        width: 300px;
-    }
-
-    100% {
-        content: url("/images/Artistic\ 2\ 2.jpg");
-        width: 200px;
-    }
 }
 
 #artistic3:hover {
-    animation: artistic3 15s infinite;
     cursor: pointer;
 }
 
-@keyframes artistic3 {
-
-    25% {
-        content: url("/images/Artistic\ 3\ 2.jpg");
-        width: 300px;
-    }
-
-    50% {
-        content: url("/images/Artistic\ 3.jpg");
-        width: 200px;
-    }
-
-    75% {
-        content: url("images/Artistic\ 3.jpg");
-        width: 300px;
-    }
-
-    100% {
-        content: url("/images/Artistic\ 3\ 2.jpg");
-        width: 200px;
-    }
-}
 #HalloweenContainer {
-    background: linear-gradient(to right, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3, #FBD489);
+    background: linear-gradient(to left, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3, #FBD489);
     border-radius: 25px;
     margin: 40px;
     height: 200px;
