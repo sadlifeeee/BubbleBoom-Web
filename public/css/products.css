@@ -50,7 +50,7 @@ section {
 {
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
@@ -59,7 +59,7 @@ section {
 #seasonRightContainer {
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: right;
@@ -86,8 +86,8 @@ section {
 {
     align-self: center;
     text-align:  center;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin-bottom: 10px;
 }
 
@@ -101,12 +101,9 @@ section {
 .productName 
 {
     font-weight: bold;
+    font-size: 25px;
 }
 
-.productPrice 
-{
-    font-weight: bold;
-}
 
 .productContainer
 {
@@ -128,7 +125,7 @@ section {
     align-items: center;
     display:flex;
     padding: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .comingsoon
@@ -147,6 +144,7 @@ section {
     background: linear-gradient(to left, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3, #FBD489);
     border-radius: 25px;
     margin: 80px 40px 40px 40px;
+    height: 34.5em;
 }
 
 #blushBubble:hover
@@ -167,7 +165,7 @@ section {
     background: linear-gradient(to right, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3 , #FBD489 );
     border-radius: 25px;
     margin: 40px;
-    height: 33em;
+    height: 38em;
 }
 
 #artistic1:hover {
