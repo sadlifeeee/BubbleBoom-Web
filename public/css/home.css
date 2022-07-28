@@ -12,6 +12,16 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     height:100%;
     width: 100%;
@@ -83,7 +93,7 @@ section {
 #checkOutContainer {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
     justify-content: center;
     align-self: center;
     display: flex;
@@ -91,8 +101,10 @@ section {
 
 #checkOutWrapper {
     width: 400px;
-    height: 100px;
-    padding: 20px;
+    height: 80px;
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 25px 20px 20px 20px;
 }
 
 #checkOut {
@@ -190,6 +202,7 @@ section {
 }
 
 .modal-content {
+    transition: 5s ease-out;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -263,4 +276,94 @@ section {
 .prev:hover,
 .next:hover {
     background-color: #999;
+}
+
+@media (max-width: 1040px) {
+    .numbertext {
+        font-size: 50px;
+        margin-top: 21px;
+        margin-left: 20px;
+        z-index: 2;
+    }
+
+    .close {
+        font-size: 100px;
+        position: absolute;
+        top: 0;
+        object-fit: contain;
+        text-shadow: 2px 2px 4px #000000;
+        z-index: 1;
+    }
+
+    .prev {
+        margin-left: 0px;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 30%;
+    }
+
+    .next {
+        margin-left: 0px;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 30%;
+    }
+
+    #nextTest {
+        position: absolute;
+        top: 38%;
+        right: 16%;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    #prevTest {
+        position: absolute;
+        top: 38%;
+        left: 16%;
+        z-index: 1;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .imagesSlide {
+        align-self: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .modal-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    #imageViewOne {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    #imageViewTwo {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: transparent;
+    }
+
 }

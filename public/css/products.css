@@ -10,7 +10,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -21,17 +20,7 @@ body {
 
 section {
     background-color: #FFFBEE;
-}
-
-@media(max-width: 700px) {
-    nav ul li a {
-        padding: 10px;
-        border-radius: 3px;
-        font-size: 6px;
-        text-transform: uppercase;
-        color: black;
-    }
-}
+}   
 
 #topTitle
 {
@@ -42,7 +31,8 @@ section {
 #topContainer
 {
     width: 100%;
-    margin: 10px;
+    padding-top : 120px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
 }
 
@@ -71,6 +61,7 @@ section {
     color: black;
     font-size: 50px;
     font-weight: bold;
+    animation: fadeInAnimation ease 2s;
 }
 
 #productPhotoContainer
@@ -109,7 +100,8 @@ section {
 {
     display: flex;
     flex-direction: column;
-    width: 33.33%
+    width: 33.33%;
+    animation: fadeInAnimation ease 2s;
 }
 
 .productInfoContainer
@@ -131,6 +123,7 @@ section {
 .comingsoon
 {
     text-align: center;
+    animation: fadeInAnimation ease 2s;
 }
 
 .comingsoonText
@@ -139,11 +132,21 @@ section {
     font-family: bold;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 #MilkTeaContainer
 {
     background: linear-gradient(to left, #FFC3A0, #FFAFBD, #FECBC5, #F3A9C3, #FBD489);
     border-radius: 25px;
-    margin: 80px 40px 40px 40px;
+    margin: 40px 40px 40px 40px;
     height: 34.5em;
 }
 
@@ -293,4 +296,94 @@ section {
 .prev:hover,
 .next:hover {
     background-color: #999;
+}
+
+@media (max-width: 1040px) {
+    .numbertext {
+        font-size: 50px;
+        margin-top: 21px;
+        margin-left: 20px;
+        z-index: 2;
+    }
+
+    .close {
+        font-size: 100px;
+        position: absolute;
+        top: 0;
+        object-fit: contain;
+        text-shadow: 2px 2px 4px #000000;
+        z-index: 1;
+    }
+
+    .prev {
+        margin-left: 0px;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 30%;
+    }
+
+    .next {
+        margin-left: 0px;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 30%;
+    }
+
+    #nextTest {
+        position: absolute;
+        top: 38%;
+        right: 16%;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    #prevTest {
+        position: absolute;
+        top: 38%;
+        left: 16%;
+        z-index: 1;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .imagesSlide {
+        align-self: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .modal-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    #imageViewOne {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    #imageViewTwo {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: transparent;
+    }
+
 }

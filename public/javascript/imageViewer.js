@@ -30,10 +30,6 @@ $(document).ready(function() {
 
         slides[0].style.display = "block";
     }
-
-    $('#blushBubble').on('click' , function() {
-        alert("test");
-    })
     
     $('.productPhoto').on('click', function() {
         

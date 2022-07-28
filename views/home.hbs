@@ -25,24 +25,24 @@
                 <img src = "../images/homeSelfCarepng.png" id = "selfCarePicture">
             </div>
             -->
-            <a href = "https://www.lazada.com.ph/shop/bubblebooms-ph/"><img src = "../images/homePicture1.jpg" id = "homePicture"></a>
+            <img src = "../images/homePicture1.jpg" id = "homePicture">
         </div>
 
         <div id = "imageViewer" class = "modal">
             <span class="close cursor">&times;</span>
             <div class="modal-content">
                 <div class="numbertext">0 / 0</div>
-                <a class="prev">&#10094;</a>
-
+                <a class="prev"><span id = "prevTest">&#10094;</span></a>
+                
                 <div class="mySlides">
-                    <img id = "imageViewOne" style="width:100%">
+                    <img class= "imagesSlide" id = "imageViewOne" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <img id="imageViewTwo" style="width:100%">
+                    <img class= "imagesSlide" id="imageViewTwo" style="width:100%">
                 </div>
 
-                <a class="next">&#10095;</a>
+                <a class="next"><span id = "nextTest">&#10095;</span></a>
                 
             </div>
         </div>
@@ -86,9 +86,11 @@
         </div>
 
         <div id = "checkOutContainer">
-            <div id = "checkOutWrapper">
-                <a href = "/products" id="checkOut" >Click here for more products</a>
-            </div>
+            <a href = "/products">
+                <div id = "checkOutWrapper">
+                    <span id="checkOut" >Click here for more products</span>
+                </div>
+            </a>
         </div>
 
     </section>
