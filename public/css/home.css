@@ -283,7 +283,7 @@ section {
         font-size: 50px;
         margin-top: 21px;
         margin-left: 20px;
-        z-index: 2;
+        z-index: 5;
     }
 
     .close {
@@ -300,6 +300,7 @@ section {
         position: absolute;
         left: 0;
         top: 10%;
+        z-index: 2;
         width: 30%;
     }
 
