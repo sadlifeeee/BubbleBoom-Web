@@ -1,0 +1,367 @@
+@font-face {
+    font-family: Hammock;
+    src: url(/fonts/HAMMOCK-Black.otf);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    height:100%;
+    width: 100%;
+    background-color: #FFFBEE;
+}
+
+section {
+    background-color: #FFFBEE;
+    height: 100%;
+}
+
+#homeContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+#homePicture
+{
+    cursor: pointer;
+    animation: photo2 15s infinite;
+    margin-top: 65px;
+    overflow: hidden;
+    height: 90%;
+    width: 100vw;
+    align-self: center;
+    object-fit: fill;
+}
+
+
+#logoContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+#logoPicture
+{
+    width: auto;
+    height: 300px;
+}
+
+#selfCarePicture
+{
+    margin-top: -50px;
+    object-fit: contain;
+    align-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+#topFeatureProductContainer {
+    width: 100%;
+    margin: 30px 0px 35px 0px;
+    text-align: center;
+}
+
+#featureTitle
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#checkOutContainer {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+}
+
+#checkOutWrapper {
+    width: 400px;
+    height: 80px;
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 25px 20px 20px 20px;
+}
+
+#checkOut {
+    font-size: 20px;
+    margin:auto;
+    font-weight: bold;
+    color:black;
+}
+
+#checkOut:hover{
+    cursor:pointer;
+}
+
+#productPhotoContainer {
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -60px;
+}
+
+.productPhoto {
+    align-self: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#productNameContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productName {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%
+}
+
+.productInfoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.aboutProduct {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#blushBubble:hover {
+    cursor: pointer;
+}
+
+#citrusFoam:hover {
+    cursor: pointer;
+}
+
+#cuppaJava:hover {
+    cursor: pointer;
+}
+
+#imageViewer {
+    display: none;
+    position: fixed;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.numbertext {
+    color: #FFFBEE;
+    font-size: 3em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.modal-content {
+    transition: 5s ease-out;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+
+#imageViewOne {
+    align-self: center;
+    text-align: center;
+    height: 600px;
+    object-fit: contain;
+    padding: 50px;
+}
+
+#imageViewTwo {
+    align-self: center;
+    text-align: center;
+    height: 600px;
+    object-fit: contain;
+    padding: 50px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.prev,
+.next {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    align-self: center;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    border-radius: 10px 0 0 10px;
+}
+
+.next {
+    margin-left: 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #999;
+}
+
+@media (max-width: 1040px) {
+    .numbertext {
+        font-size: 3em;
+        margin-top: 21px;
+        margin-left: 20px;
+        z-index: 5;
+    }
+
+    .close {
+        font-size: 100px;
+        position: absolute;
+        top: 0;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .prev {
+        margin-left: 0px;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        z-index: 2;
+        width: 30%;
+    }
+
+    .next {
+        margin-left: 0px;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 30%;
+    }
+
+    #nextTest {
+        position: absolute;
+        top: 38%;
+        right: 16%;
+        font-size: 100px;
+    }
+
+    #prevTest {
+        position: absolute;
+        top: 38%;
+        left: 16%;
+        z-index: 1;
+        font-size: 100px;
+    }
+
+    .imagesSlide {
+        align-self: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .modal-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    #imageViewOne {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    #imageViewTwo {
+        align-self: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        object-fit: contain;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: transparent;
+    }
+
+}

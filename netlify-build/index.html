@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BubbleBooms | Home</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Tangerine&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript\imageViewer.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="navLogoContainer">
+            <a href="/"><img src="images/logo.png" id="navLogo"></a>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <div id = "homeContainer">
+            <!--
+            <div id = "logoContainer">
+                <img src = "../images/logo.png" id = "logoPicture">
+                <img src = "../images/homeSelfCarepng.png" id = "selfCarePicture">
+            </div>
+            -->
+            <img src = "images/homePicture1.jpg" id = "homePicture">
+        </div>
+
+        <div id = "imageViewer" class = "modal">
+            <span class="close cursor">&times;</span>
+            <div class="modal-content">
+                <div class="numbertext">0 / 0</div>
+                <a class="prev"><span id = "prevTest">&#10094;</span></a>
+                
+                <div class="mySlides">
+                    <img class= "imagesSlide" id = "imageViewOne" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class= "imagesSlide" id="imageViewTwo" style="width:100%">
+                </div>
+
+                <a class="next"><span id = "nextTest">&#10095;</span></a>
+                
+            </div>
+        </div>
+
+        <div id = "featureProductContainer">
+            
+            <div id = "topFeatureProductContainer">
+                <label id="featureTitle">Featured Products</label>
+            </div>
+
+
+            <div id="productPhotoContainer">
+                <div class="productContainer">
+                    <img src="images/BlushBubble.jpg" class="productPhoto" id = "blushBubble">
+                    <div class="productInfoContainer">
+                        <label class="productName">Blush Bubble</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is strawberry ice cream scented and a milk tea inspired hand soap that has cute designs of a straw and pearls!</label>
+                    </div>
+                </div>
+            
+                <div class="productContainer">
+                    <img src="images/CitrusFoam.jpg" class="productPhoto" id = "citrusFoam" >
+                    <div class="productInfoContainer">
+                        <label class="productName">Citrus Foam</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is green tea scented and a milk tea inspired hand soap. It was even purposely made to have a look of a Honey Dew milk
+                        tea to be more appealing!</label>
+                    </div>
+                </div>
+            
+                <div class="productContainer">
+                    <img src="images/Cuppa Java.jpg" class="productPhoto" id = "cuppaJava">
+                    <div class="productInfoContainer">
+                        <label class="productName">Cuppa Java</label>
+                        <label class="productPrice">P149</label>
+                        <label class="aboutProduct">It is coffee scented and a milk tea inspired hand soap that can surely satisfy the nose of a coffee lover!</label>
+                    </div>
+                </div>
+
+        </div>
+
+        <div id = "checkOutContainer">
+            <a href = "products.html">
+                <div id = "checkOutWrapper">
+                    <span id="checkOut" >Click here for more products</span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <hr id="footerLine">
+        <div id="footerContainer">
+            <div id="footerLogo">
+                <label class="logo"><text id="logoFirstHalf">Bubble</text><text id="logoSecondHalf">Booms</text></label>
+                <label id="footerLogoText">© BubbleBooms. All Rights Reserved 2022.</label>
+            </div>
+    
+            <div id="social">
+                <span id="linksTitle">Find us here</span>
+                <div id="socialLogos">
+                    <a href="https://www.facebook.com/BubbleBooms.Official/"><img src="images/facebook-logo2.png"
+                            style="object-fit: contain; height: 30px;"></a>
+                    <a href="https://www.instagram.com/bubblebooms.ph/"><img src="images/instagram-logo.png"
+                            style="object-fit: contain; height: 30px;"></a>
+                    <a href="https://www.shopee.ph/bubblebooms.ph"><img src="images/shopee-logo.png"
+                            style="object-fit: contain; height: 30px;"></a>
+                    <a href="https://www.lazada.com.ph/shop/bubblebooms-ph/"><img src="images/lazada-logo.png"
+                            style="object-fit: contain; height: 30px;"></a>
+                </div>
+    
+            </div>
+    
+        </div>
+    </footer>
+
+</body>
+
+</html>

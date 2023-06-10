@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Hammock;
+    src: url(/fonts/HAMMOCK-Black.otf);
+}
+
+*
+{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #FFFBEE;
+}
+
+section
+{
+    background-color: #FFFBEE;
+}
+
+div#mainContainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: center;
+}
+
+div#information
+{
+    display: flex;
+    flex-direction: column;
+}
+
+div#photo
+{
+    align-items: center;
+}
+
+.pageTitle
+{
+    font-size: 50px;
+}
+
+#information
+{
+    margin: 100px 2vw 2vw 4vw;
+    
+}
+
+#logoAboutTitle 
+{
+    font-size: 20px;
+}
+
+#aboutInfo
+{
+    font-size: 15px;
+}
+
+#aboutImage
+{
+    object-fit: contain;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+#founderContainerFirstHalf
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self:center;
+}
+
+#founderContainerSecondHalf
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.founderImages
+{
+    object-fit: contain;
+    height: 15em;
+    padding: 5px;
+    width: 240px;
+}
+
+.founderName
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.founderInfo
+{
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.founderItemContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#founderMainContainer
+{
+    border-radius: 30px;
+    margin-top: 5%;
+}
+
+#founderTitleContainer
+{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 30px;
+}

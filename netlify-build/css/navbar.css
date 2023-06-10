@@ -1,0 +1,41 @@
+#navLogo {
+    position: absolute;
+    height: 180px;
+    width: 200px;
+    object-fit: contain;
+    margin-top: -35px;
+}
+
+nav {
+    position: fixed;
+    height: 100px;
+    top:0;
+    right:0;
+    left:0;
+    width: 100%;
+    background-color: #F3DBCF;
+}
+
+nav ul {
+    float: right;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+a.active,
+a:hover {
+    transition: .5s;
+}
